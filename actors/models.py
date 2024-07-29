@@ -2,7 +2,7 @@ from django.db import models
 
 NATIONALITY_CHOICES = (
     ('USA', 'Estados Unidos'),
-    ('BRAZIL', 'Brasil'),
+    ('BR', 'Brasil'),
 )
 
 class Actor(models.Model):
