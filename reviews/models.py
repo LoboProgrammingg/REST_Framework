@@ -11,8 +11,8 @@ class Review(models.Model):
     )
     stars = models.IntegerField(
         validators=[
-            MinValueValidator(0, 'Avaliacao nao pode ser inferior a 0 estrelas.'),
-            MaxValueValidator(5, 'Avaliacao nao pode ser superior a 5 estrelas.'),
+            MinValueValidator(0),
+            MaxValueValidator(5),
         ]
     )
     comment = models.TextField(null=True, blank=True)
