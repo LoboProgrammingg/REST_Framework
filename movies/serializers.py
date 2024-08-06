@@ -28,3 +28,9 @@ class MovieModelSerializer(serializers.ModelSerializer):
         if len(value) > 500:
             raise serializers.ValidationError('campo de resumo nao pode ter mais de 500 caracteres.')
         return value
+    
+class MovieStatsSerializer(serializers.Serializer):
+    total_movies = serializers.IntegerField()
+    movie_by_genre = serializers.ListField()
+    total_reviews = serializers.IntegerField()
+    average_stars = serializers.FloatField()
