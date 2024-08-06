@@ -32,7 +32,7 @@ class MovieStatsView(views.APIView):
         average_stars = Review.objects.aggregate(
             avg_stars=Avg('stars'))['avg_stars']
 
-        data={
+        data = {
             'total_movies': total_movies,
             'movie_by_genre': movies_by_genre,
             'total_reviews': total_reviews,
