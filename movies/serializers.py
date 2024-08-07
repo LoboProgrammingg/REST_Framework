@@ -15,12 +15,12 @@ class MovieModelSerializer(serializers.ModelSerializer):
         if value.year < 1900:
             raise serializers.ValidationError('A data de lancamento nao pode ser anterior a 1900.')
         return value
-    
+
     def validate_resume(self, value):
         if len(value) > 500:
             raise serializers.ValidationError('resumo nao pode ter mais de 500 caracteres.')
         return value
-    
+        
 
 class MovieListDetailSerializer(serializers.ModelSerializer):
     actors = ActorSerializer(many=True)
