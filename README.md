@@ -1,31 +1,98 @@
-<h1>CREATING AN API WITH DJANGO REST FRAMEWORK</h1>
+# 🌐 REST Framework
 
-> Status: Developed 
+Este repositório contém a implementação de uma API RESTful utilizando **Python** e frameworks modernos para desenvolvimento web. Ele é projetado para ser flexível, escalável e fácil de usar em projetos de pequeno a grande porte.
 
-### This project was created with the Django Rest Framework to create an API
+---
 
-## Some fields in main Model is:
+## 🚀 Tecnologias Utilizadas
 
-+ Genres
-+ Actors
-+ Movies
-+ Reviews
-+ Authentication
+- **Python**: Linguagem principal do projeto.
+- **Django REST Framework**: Framework poderoso e flexível para construção de APIs.
+- **HTML**: Para visualizações e documentação interativa das APIs.
+- **JavaScript**: Para interações dinâmicas e suporte a clientes RESTful.
+- **Outras Ferramentas**: Inclui bibliotecas auxiliares para otimizar o desenvolvimento.
 
-## The project has complete CRUD, some logic installed to calculate the rate, where 5 apps were created and the Movies app connects to them all
+---
 
-## Technologies Used:
-<table>
-    <tr>
-        <td>Python</td>
-        <td>Django</td>
-        <td>Django REST Framework</td>
-        <td>Django REST Framework JWT</td>
-    </tr>
-    <tr>
-        <td>3.12.3</td>
-        <td>5.0.7</td>
-        <td>3.15.2</td>
-        <td>5.3.1</td>
-    </tr>
-</table>
+## 🛠️ Funcionalidades
+
+- 🔹 Criação, leitura, atualização e exclusão (CRUD) de recursos.
+- 🔹 Autenticação e autorização utilizando **JWT**.
+- 🔹 Suporte para **serialização complexa** e validação de dados.
+- 🔹 Paginação, filtros e ordenação de resultados.
+- 🔹 Testes automatizados para validação de endpoints.
+- 🔹 Documentação interativa com **Swagger** e **Redoc**.
+
+---
+
+## 📦 Como Configurar o Projeto?
+
+### Pré-requisitos
+
+Certifique-se de ter as seguintes ferramentas instaladas:
+
+- [Python 3.8+](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/en/stable/)
+
+### Passos para Configuração
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/LoboProgrammingg/REST_Framework.git
+   cd REST_Framework
+   ```
+
+2. Crie um ambiente virtual:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate     # Windows
+   ```
+
+3. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Configure o banco de dados:
+   ```bash
+   python manage.py migrate
+   ```
+
+5. Inicie o servidor:
+   ```bash
+   python manage.py runserver
+   ```
+
+Acesse a aplicação em [http://localhost:8000](http://localhost:8000).
+
+---
+
+## 🧪 Testes
+
+Execute os testes automatizados para garantir que tudo está funcionando conforme esperado:
+
+```bash
+python manage.py test
+```
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
+
+1. Faça um fork do projeto.
+2. Crie uma nova branch:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Commit suas mudanças:
+   ```bash
+   git commit -m 'Adicionei uma nova feature'
+   ```
+4. Envie para a branch principal:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Crie um Pull Request.
